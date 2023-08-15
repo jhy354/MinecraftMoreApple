@@ -1,5 +1,6 @@
 package com.jhy.moreapple;
 
+import com.jhy.moreapple.diamond_apple.ItemRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -19,7 +20,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("moreapple")
+@Mod(Utils.MOD_ID)
 public class MoreApple
 {
     // Directly reference a log4j logger.
@@ -37,6 +38,8 @@ public class MoreApple
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
     private void setup(final FMLCommonSetupEvent event)
