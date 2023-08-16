@@ -14,13 +14,13 @@
       "item": "minecraft:apple"
     },
     {
-      "item": "minecraft:apple"
-    },
-    {
       "item": "minecraft:golden_apple"
     },
     {
       "item": "more_apple:iron_apple"
+    },
+    {
+      "item": "more_apple:chorus_apple"
     },
     {
       "item": "more_apple:baked_diamond_apple"

@@ -1,6 +1,6 @@
-package com.jhy.moreapple.iron_apple;
+package com.jhy.more_apple.iron_apple;
 
-import com.jhy.moreapple.Utils;
+import com.jhy.more_apple.Utils;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;

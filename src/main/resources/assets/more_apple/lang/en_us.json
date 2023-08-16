@@ -1,6 +1,22 @@
 {
   "item.more_apple.diamond_apple": "Diamond Apple",
+  "tooltip.more_apple.diamond_apple": "An immovable apple",
+  "tooltip.more_apple.diamond_apple_shift": "100% minor improvement in 4 attributes, 25% minor improvement in the other 4 attributes",
+
   "item.more_apple.baked_diamond_apple": "Baked Diamond Apple",
+  "tooltip.more_apple.baked_diamond_apple": "Diamond Apple Plus+",
+  "tooltip.more_apple.baked_diamond_apple_shift": "60% minor improvement in 8 attributes",
+
   "item.more_apple.iron_apple": "Iron Apple",
-  "item.more_apple.amazing_apple_salad": "Amazing Apple Salad"
+  "tooltip.more_apple.iron_apple": "It's a bit hard to eat",
+  "tooltip.more_apple.iron_apple_shift": "Slightly increase defense",
+
+  "item.more_apple.chorus_apple": "Chorus Apple",
+  "tooltip.more_apple.chorus_apple": "Maybe it can be used for teleportation?",
+  "tooltip.more_apple.chorus_apple_shift": "The miraculous fruit composed of Chorus Fruit and Apple seems to contain power beyond space",
+
+
+  "item.more_apple.amazing_apple_salad": "Amazing Apple Salad",
+  "tooltip.more_apple.amazing_apple_salad": "Amazing miscellaneous salad",
+  "tooltip.more_apple.amazing_apple_salad_shift": "Obtain a significant improvement of 8 attributes by 100%"
 }

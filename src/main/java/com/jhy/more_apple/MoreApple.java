@@ -1,10 +1,10 @@
-package com.jhy.moreapple;
+package com.jhy.more_apple;
 
-import com.jhy.moreapple.amazing_apple_salad.AmazingAppleSalad;
-import com.jhy.moreapple.amazing_apple_salad.AmazingAppleSaladReg;
-import com.jhy.moreapple.baked_diamond_apple.BakedDiamondAppleReg;
-import com.jhy.moreapple.diamond_apple.DiamondAppleReg;
-import com.jhy.moreapple.iron_apple.IronAppleReg;
+import com.jhy.more_apple.amazing_apple_salad.AmazingAppleSaladReg;
+import com.jhy.more_apple.baked_diamond_apple.BakedDiamondAppleReg;
+import com.jhy.more_apple.chorus_apple.ChorusAppleReg;
+import com.jhy.more_apple.diamond_apple.DiamondAppleReg;
+import com.jhy.more_apple.iron_apple.IronAppleReg;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -50,6 +50,9 @@ public class MoreApple
 
         // Iron
         IronAppleReg.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+
+        // Chorus
+        ChorusAppleReg.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         // Etc
         AmazingAppleSaladReg.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());

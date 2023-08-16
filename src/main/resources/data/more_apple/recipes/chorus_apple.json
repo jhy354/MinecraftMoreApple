@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#*#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:chorus_fruit"
+    },
+    "*": {
+      "item": "minecraft:apple"
+    }
+  },
+  "result": {
+    "item": "more_apple:chorus_apple",
+    "count": 1
+  }
+}
