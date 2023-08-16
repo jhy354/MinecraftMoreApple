@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "more_apple:diamond_apple"
+  },
+  "result": "more_apple:baked_diamond_apple",
+  "experience": 5,
+  "cookingtime": 900
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#*#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "*": {
+      "item": "minecraft:apple"
+    }
+  },
+  "result": {
+    "item": "more_apple:diamond_apple",
+    "count": 1
+  }
+}

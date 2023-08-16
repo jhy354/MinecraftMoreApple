@@ -1,6 +1,10 @@
 package com.jhy.moreapple;
 
-import com.jhy.moreapple.diamond_apple.ItemRegistry;
+import com.jhy.moreapple.amazing_apple_salad.AmazingAppleSalad;
+import com.jhy.moreapple.amazing_apple_salad.AmazingAppleSaladReg;
+import com.jhy.moreapple.baked_diamond_apple.BakedDiamondAppleReg;
+import com.jhy.moreapple.diamond_apple.DiamondAppleReg;
+import com.jhy.moreapple.iron_apple.IronAppleReg;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -39,12 +43,21 @@ public class MoreApple
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        // More Apples
+        // Diamond
+        DiamondAppleReg.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        BakedDiamondAppleReg.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+
+        // Iron
+        IronAppleReg.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+
+        // Etc
+        AmazingAppleSaladReg.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        // some preinit code
+        // some pre-init code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
