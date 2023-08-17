@@ -4,7 +4,10 @@ import com.jhy.more_apple.amazing_apple_salad.AmazingAppleSaladReg;
 import com.jhy.more_apple.baked_diamond_apple.BakedDiamondAppleReg;
 import com.jhy.more_apple.chorus_apple.ChorusAppleReg;
 import com.jhy.more_apple.diamond_apple.DiamondAppleReg;
+import com.jhy.more_apple.flame_apple.FlameAppleReg;
 import com.jhy.more_apple.iron_apple.IronAppleReg;
+import com.jhy.more_apple.strange_villager_apple.StrangeVillagerAppleReg;
+import com.jhy.more_apple.villager_apple.VillagerAppleReg;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -54,8 +57,13 @@ public class MoreApple
         // Chorus
         ChorusAppleReg.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
+        // Entity Apple
+        VillagerAppleReg.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        StrangeVillagerAppleReg.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+
         // Etc
         AmazingAppleSaladReg.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        FlameAppleReg.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
     private void setup(final FMLCommonSetupEvent event)

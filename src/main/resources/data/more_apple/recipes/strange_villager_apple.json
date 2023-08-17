@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "more_apple:villager_apple"
+  },
+  "result": "more_apple:strange_villager_apple",
+  "experience": 5,
+  "cookingtime": 300
+}

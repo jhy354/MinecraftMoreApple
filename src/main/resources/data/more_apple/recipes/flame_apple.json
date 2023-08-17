@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "-#-",
+    "#*#",
+    "-#-"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:fire_charge"
+    },
+    "*": {
+      "item": "minecraft:apple"
+    },
+    "-": {
+      "item": "minecraft:magma_cream"
+    }
+  },
+  "result": {
+    "item": "more_apple:flame_apple",
+    "count": 1
+  }
+}

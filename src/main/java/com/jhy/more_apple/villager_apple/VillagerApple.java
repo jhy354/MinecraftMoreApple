@@ -1,14 +1,13 @@
-package com.jhy.more_apple.chorus_apple;
+package com.jhy.more_apple.villager_apple;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.monster.CreeperEntity;
+import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
@@ -16,7 +15,7 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class ChorusApple extends Item {
+public class VillagerApple extends Item {
     private static final Food food = (new Food.Builder())
             .saturationMod(2)
             .nutrition(2)
@@ -27,10 +26,10 @@ public class ChorusApple extends Item {
     public void appendHoverText(ItemStack p_77624_1_, @Nullable World p_77624_2_, List<ITextComponent> tooltip, ITooltipFlag p_77624_4_) {
 
         if (Screen.hasShiftDown()) {
-            tooltip.add(new TranslationTextComponent("tooltip.more_apple.chorus_apple_shift"));
+            tooltip.add(new TranslationTextComponent("tooltip.more_apple.villager_apple_shift"));
         }
         else {
-            tooltip.add(new TranslationTextComponent("tooltip.more_apple.chorus_apple"));
+            tooltip.add(new TranslationTextComponent("tooltip.more_apple.villager_apple"));
         }
 
         super.appendHoverText(p_77624_1_, p_77624_2_, tooltip, p_77624_4_);
@@ -39,24 +38,26 @@ public class ChorusApple extends Item {
     @Override
     public ActionResult<ItemStack> use(World p_77659_1_, PlayerEntity player, Hand p_77659_3_) {
         if(!player.isLocalPlayer()) {
-            Vector3d v = new Vector3d(player.getX() + random.nextDouble()*100, player.getY() + random.nextDouble()*100, player.getZ() + random.nextDouble()*100);
-            player.moveTo(v);
+            player.inventory.removeItem(player.getItemInHand(Hand.MAIN_HAND));
+            World world = player.getCommandSenderWorld();
+            IronGolemEntity[] iron_golems = new IronGolemEntity[5];
+            for (int i=0; i<5; i++) {
+                iron_golems[i] = new IronGolemEntity(EntityType.IRON_GOLEM, world);
+                iron_golems[i].moveTo(player.position());
+                // iron_golems[i].setPersistentAngerTarget(player.getUUID());
+                world.addFreshEntity(iron_golems[i]);
+            }
         }
 
-        player.inventory.removeItem(player.getItemInHand(Hand.MAIN_HAND));
-        World world = player.getCommandSenderWorld();
-        CreeperEntity creeper = new CreeperEntity(EntityType.CREEPER, world);
-        world.addFreshEntity(creeper);
         return super.use(p_77659_1_, player, p_77659_3_);
     }
 
-    public ChorusApple() {
-        super(
-                new Properties()
-                        .food(food)
-                        .tab(ItemGroup.TAB_FOOD)
-                        .rarity(Rarity.RARE)
-                        .stacksTo(1)
+    public VillagerApple() {
+        super(new Properties()
+                .food(food)
+                .tab(ItemGroup.TAB_FOOD)
+                .rarity(Rarity.UNCOMMON)
+                .stacksTo(1)
         );
     }
 

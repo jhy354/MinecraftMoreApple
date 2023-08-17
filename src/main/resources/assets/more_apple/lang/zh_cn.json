@@ -8,12 +8,28 @@
   "tooltip.more_apple.baked_diamond_apple_shift": "60% 获得 8 项属性的小幅提升",
 
   "item.more_apple.iron_apple": "铁苹果",
-  "tooltip.more_apple.iron_apple_shift": "有点硌牙",
-  "tooltip.more_apple.iron_apple": "小幅提升防御力",
+  "tooltip.more_apple.iron_apple": "有点硌牙",
+  "tooltip.more_apple.iron_apple_shift": "小幅提升防御力",
 
   "item.more_apple.chorus_apple": "紫颂苹果",
   "tooltip.more_apple.chorus_apple": "也许可以用来传送?",
   "tooltip.more_apple.chorus_apple_shift": "用紫颂果和苹果合成的神奇果实, 似乎蕴含着超越空间的力量",
+
+  "item.more_apple.villager_apple": "村民苹果",
+  "tooltip.more_apple.villager_apple": "绿宝石 = 村民 ?",
+  "tooltip.more_apple.villager_apple_shift": "遇热融化",
+
+  "item.more_apple.strange_villager_apple": "村民苹果",
+  "tooltip.more_apple.strange_villager_apple": "й“Ѓе‚Ђе„Ў",
+  "tooltip.more_apple.strange_villager_apple_shift": "й“Ѓе‚Ђе„Ў",
+
+  "item.more_apple.flame_apple": "火焰苹果",
+  "tooltip.more_apple.flame_apple": "让火焰净化一切!",
+  "tooltip.more_apple.flame_apple_shift": "8饥饿值/8饱食度 的它需要一些运气才能得到想要的结果",
+
+  "item.more_apple.flame_apple_amulet": "火焰苹果护符",
+  "tooltip.more_apple.flame_apple_amulet": "你在玩火?",
+  "tooltip.more_apple.flame_apple_shift_amulet": "50% 获得抗火效果",
 
   "item.more_apple.amazing_apple_salad": "神奇苹果沙拉",
   "tooltip.more_apple.amazing_apple_salad": "苹果大乱炖",

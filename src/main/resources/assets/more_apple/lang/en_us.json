@@ -15,6 +15,21 @@
   "tooltip.more_apple.chorus_apple": "Maybe it can be used for teleportation?",
   "tooltip.more_apple.chorus_apple_shift": "The miraculous fruit composed of Chorus Fruit and Apple seems to contain power beyond space",
 
+  "item.more_apple.villager_apple": "Villager Apple",
+  "tooltip.more_apple.villager_apple": "Emerald = Villager ?",
+  "tooltip.more_apple.villager_apple_shift": "He loved fire before being turned into an apple",
+
+  "item.more_apple.strange_villager_apple": "Villager Apple",
+  "tooltip.more_apple.strange_villager_apple": "й“Ѓе‚Ђе„Ў",
+  "tooltip.more_apple.strange_villager_apple_shift": "й“Ѓе‚Ђе„Ў",
+
+  "item.more_apple.flame_apple": "Flame Apple",
+  "tooltip.more_apple.flame_apple": "By Fire Be Purged!",
+  "tooltip.more_apple.flame_apple_shift": "BY FIRE BE PURGED!!",
+
+  "item.more_apple.flame_apple_amulet": "Flame Apple Amulet",
+  "tooltip.more_apple.flame_apple_amulet": "Are you playing with fire?",
+  "tooltip.more_apple.flame_apple_shift_amulet": "50% obtain fire resistance effect",
 
   "item.more_apple.amazing_apple_salad": "Amazing Apple Salad",
   "tooltip.more_apple.amazing_apple_salad": "Amazing miscellaneous salad",
