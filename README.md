@@ -1,7 +1,7 @@
 # MinecraftMoreApple
 A Minecraft mod, adding more apples to game
 <div align="center">
-  <img src=https://raw.githubusercontent.com/jhy354/READMEIMAGE/master/MinecraftMoreApple/more_apple.png width=75% />
+  <img src=https://raw.githubusercontent.com/jhy354/READMEIMAGE/master/MinecraftMoreApple/more_apple.png width=25% />
 </div>
 
 ## Game Versions
